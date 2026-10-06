@@ -13,7 +13,7 @@ export default function Home() {
   const [errorMsg, setErrorMsg] = useState("");
 
   // 🔑 গেমের ডিফল্ট পাসওয়ার্ড (পরবর্তীতে এখান থেকে পরিবর্তন করতে পারবেন)
-  const CORRECT_PASSWORD = "4961";
+  const CORRECT_PASSWORD = "Forhad";
 
   // --- মূল গেম স্টেটসমূহ ---
   const [level, setLevel] = useState(1);
@@ -38,6 +38,7 @@ export default function Home() {
     const savedLevel = parseInt(localStorage.getItem("r15_level") || "1", 10);
     const savedHighScore = parseInt(localStorage.getItem("r15_highscore") || "0", 10);
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (!isNaN(savedWins)) setWins(savedWins);
     if (!isNaN(savedCoins)) setTotalCoins(savedCoins);
     if (!isNaN(savedLevel) && savedLevel > 0) setLevel(savedLevel);
@@ -50,6 +51,7 @@ export default function Home() {
   // ২. হাই স্কোর চেক ও সেভ
   useEffect(() => {
     if (currentScore > highScore) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setHighScore(currentScore);
       localStorage.setItem("r15_highscore", currentScore.toString());
     }

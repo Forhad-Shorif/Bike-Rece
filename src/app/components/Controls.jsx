@@ -205,7 +205,7 @@ export default function Controls({ onSteer, onGas, onBrake }) {
           }`}
         >
           <span className="text-base">🚀</span>
-          <span>GAS</span>
+          <span>Start</span>
         </button>
       </div>
 

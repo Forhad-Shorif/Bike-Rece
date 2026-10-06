@@ -53,7 +53,7 @@ export default function Dashboard({
             <div className="text-left">
               <p className="text-[8px] text-cyan-400 font-extrabold uppercase leading-none tracking-widest">PROFILE</p>
               <p className="text-[11px] font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 leading-tight drop-shadow-[0_0_6px_rgba(0,243,255,0.4)]">
-                Forhad Shorif
+                TE    AMAN    ⚡
               </p>
             </div>
           </button>
@@ -113,7 +113,7 @@ export default function Dashboard({
             </button>
 
             <div className="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-2xl shadow-lg mb-2 border border-cyan-300/30">
-              🏎️
+              🧑‍💻
             </div>
             
             <h3 className="text-lg font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400 tracking-wider">
