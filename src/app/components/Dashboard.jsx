@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Dashboard({
@@ -48,12 +49,14 @@ export default function Dashboard({
             className="flex items-center gap-1.5 bg-slate-800/90 hover:bg-slate-700/80 border border-slate-600/50 p-1 pr-2.5 rounded-xl shadow-md active:scale-95 transition"
           >
             <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-black text-xs shadow-md">
-              👤
+              
             </div>
             <div className="text-left">
               <p className="text-[8px] text-cyan-400 font-extrabold uppercase leading-none tracking-widest">PROFILE</p>
               <p className="text-[11px] font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 leading-tight drop-shadow-[0_0_6px_rgba(0,243,255,0.4)]">
-                TE    AMAN    ⚡
+              <Link href="/profile">
+              👤   TE    AMAN    ⚡
+              </Link>
               </p>
             </div>
           </button>
